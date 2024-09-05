@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    background-color: #215568;
+    color: white;
+}
+
+.header{
+    background-color: #1a1555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    font-size: 15px;
+    text-align: center;
+    text-transform: none;
+    text-decoration: underline;
+    line-height: 74px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+main{
+    margin: 50px;
+    section{
+        margin-bottom: 40px;
+    }
+}
+
+.subtitulo{
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.blockquote {
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: #d2d0d0;
+    padding: 4px;
+    margin: 8px 0;
+    border-left: 6px solid #6e7579;
+}
+
+.parrafo{
+    margin-top: 4px;
+    font-size: small;
+    text-align: start;
+    text-transform: capitalize;
+    text-decoration: underline;
+    
+}
+
+.p1{
+    padding: 4px;
+    color: #6e6a6a;
+    text-align: start;
+}
+
+.box_0{
+    margin: 10px 0px;
+    padding: 4px;
+    max-width: fit-content;
+    background-color: #b3b3b3;
+}
+
+.box_1{
+    margin: 10px 0px;
+    padding: 4px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #DBD8E3;
+}
+
+.box_2{
+    margin: 10px 0px;
+    padding: 4px;
+    background-color: #2b4b91;
+    border: 3px solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #DBD8E3;
+}
+
+.box_3{
+    position: relative;
+    margin: 10px 0px;
+    padding: 4px;
+    height: 50px;
+    background-color: #2f3944;
+}
+
+.box_4{
+    position: absolute;
+    margin: 10px 0px;
+    padding: 4px;
+    top: 1.5vh;
+    left: 20vw;
+    background-color: #2f3944;
+    border-radius: 10px;
+}
+
+.grid-conteiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.grid-item{
+    background-color: #2f3944;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    background-color: #2f794d;
+    margin: 10px 0px;
+}
+
+.cuadrado:hover{
+    background-color: #2f794d;
+    border: 2px solid #000000;
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    background-color: #18472a;
+    border-radius: 50%;
+    margin: 10px 0px;
+    animation: mover 3s infinite;
+}
+
+.footer{
+    background-color: #1a1555;
+    height: 10vh;
+    font-size: medium;
+    text-align: center;
+    align-items: center;  
+    line-height: 74px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-style: italic;
+}
+
+@keyframes mover{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(150px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header{
+        background-color: #1a1555;
+    }
+
+    body{
+        background-color: #1a1555;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    section{
+        background-color: #1a1555;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 4px #181818;
+    }
+    .box_1{
+        box-shadow: 2px 2px 2px #00ADB5;
+    }
+    .box_2{
+        color: #000000;
+        background-color: #00ADB5;
+        box-shadow: 2px 2px 2px #016d73;
+    }
+    .box_3{
+        background-color: #1a1555;
+    }
+    .box_4{
+        color: #000000;
+        background-color: #00FFF5;
+    }
+
+    .grid-item{
+        color: #000000;
+        background-color: #00ADB5;
+    }
+
+    .footer{
+        background-color: #1a1555;
+    }
+}
